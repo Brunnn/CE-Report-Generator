@@ -1,0 +1,23 @@
+{
+    "name": "O Impressionante Gerador de Relatórios V4",
+    "description": "Gerador de Relatórios",
+    "version": "4.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "icon": "/icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "windows": "Ctrl+Shift+1",
+                "mac": "Command+Shift+1",
+                "chromeos": "Ctrl+Shift+1",
+                "linux": "Ctrl+Shift+1"
+            }
+        }
+    }
+}

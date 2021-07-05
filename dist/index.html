@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Impressionante Gerador de Relatórios V4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+
+
+<body>
+    <div class="container-fluid personalized-container">
+
+        <form id="main-form">
+            <div class="row mb-2">
+                <div class="form-group col-4 col-md-3">
+                    <label for="sac">SAC</label>
+                    <input type="text" class="form-control" id="sac" placeholder="000000">
+                </div>
+                <div class="col-md-9 col-8 d-flex flex-column justify-content-center">
+                    <label for="input1">Frase do Dia:</label>
+                    <span class="frase-random">dsa</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-12 col-md-6 mb-2">
+                    <label for="problem" id="problem1-label">Problema encontrado:</label>
+                    <div class="text-area-control">
+                        <textarea class="form-control text-area text-area-field" id="problem" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-md-6 mb-2">
+                    <label for="modification" id="modification-label">Alteração realizada:</label>
+                    <div class="text-area-control">
+                        <textarea class="form-control text-area text-area-field" id="modification" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-12 col-md-6 mb-2">
+                    <label for="test-suggestion" id="test-suggestion-label">Sugestão de teste:</label>
+                    <div class="text-area-control">
+                        <textarea class="form-control text-area text-area-field" id="test-suggestion" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-md-6 mb-2">
+                    <label for="database-suggestion" id="database-suggestion-label">Sugestão de Banco para teste:</label>
+                    <div class="text-area-control">
+                        <textarea class="form-control text-area text-area-field" id="database-suggestion" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Grupos WIN/WEB -->
+            <div class="row mt-3">
+                <div class="form-group col-12 col-md-6 mb-2 position-relative">
+                    <div class="group-section">
+                        <span class="group-section-title">WIN</span>
+
+                        <div class="row mb-2">
+                            <div class="col-6 col-md-6">
+                                <label for="commit-win">Commit</label>
+                                <input type="text" class="form-control" id="commit-win" placeholder="000000">
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="form-check inicializacao-wrapper">
+                                    <input type="checkbox" class="form-check-input" id="initialization-win">
+                                    <label class="form-check-label" for="initialization-win">Inicialização?</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-12 mb-2">
+                                <label for="manualbuild-win" id="manualbuild-win-label">Rotinas para build manual (WIN)</label>
+                                <div class="text-area-control">
+                                    <textarea class="form-control text-area text-area-field" id="manualbuild-win" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group col-12 mb-2">
+                                <label for="modifiedprograms-win" id="modifiedprograms-win-label">Programas alterados (WIN)</label>
+                                <div class="text-area-control">
+                                    <textarea class="form-control text-area text-area-field" id="modifiedprograms-win" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group col-12 col-md-6 mb-2 position-relative">
+                    <div class="group-section">
+                        <span class="group-section-title">WEB</span>
+                        <div class="row mb-2">
+                            <div class="col-6 col-md-6">
+                                <label for="commit-web">Commit</label>
+                                <input type="text" class="form-control" id="commit-web" placeholder="000000">
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="form-check inicializacao-wrapper">
+                                    <input type="checkbox" class="form-check-input" id="initialization-web">
+                                    <label class="form-check-label" for="initialization-web">Inicialização?</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-12 mb-2">
+                                <label for="manualbuild-web" id="manualbuild-web-label">Rotinas para build manual (WEB)</label>
+                                <div class="text-area-control">
+                                    <textarea class="form-control text-area text-area-field" id="manualbuild-web" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group col-12 mb-2">
+                                <label for="modifiedprograms-web" id="modifiedprograms-web-label">Programas alterados (WEB)</label>
+                                <div class="text-area-control">
+                                    <textarea class="form-control text-area text-area-field" id="modifiedprograms-web" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="local-web">
+                        <label class="form-check-label" for="local-web">Processo localizado no WEB?</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="routine-web">
+                        <label class="form-check-label" for="routine-web">Rotinas alterada localizadas no WEB?</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="platform-dependent">
+                        <label class="form-check-label" for="platform-dependent">Existe interdependência entre as versões WIN e WEB?</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="boldtitles">
+                        <label class="form-check-label" for="boldtitles"><strong>Gerar títulos em negrito? (Só funciona em encaminhamento)</strong></label>
+                    </div>
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+
+
+    </div>
+
+    <div id="fullscreen-textarea-wrapper">
+        <label for="fullscreen-textarea-title" id="fullscreen-textarea-label">aaa</label>
+        <div class="text-area-control">
+            <i class="fas fa-compress-arrows-alt" id="close-fullscreen-button"></i>
+            <textarea class="form-control text-area" id="fullscreen-textarea"></textarea>
+        </div>
+    </div>
+
+    <script data-main="scripts/index" src="./scripts/require.js"></script>
+</body>
+
+</html>
